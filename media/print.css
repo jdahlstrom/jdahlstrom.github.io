@@ -1,0 +1,18 @@
+h2, h3, div.col1, div.col2 { page-break-after: avoid; }
+
+div.col1, div.col2 { margin-top: 6px; }
+
+#header div.col1 h1 { font-size: 14pt; margin: 0; padding: 0; }
+#header div.col2 h1 { font-size: 30pt; margin: 0; padding: 0; }
+
+div.col1 { width: 20%; }
+div.col2 { width: 78%; }
+
+div.col1 h3 { font-size: 12pt; color: #666; }
+div.col2 h3 { font-size: 11pt; margin-bottom: 4pt; }
+
+p { margin: 2px 0; }
+
+li { margin: 2px 0; }
+
+a { color: #333; text-decoration: none; }
