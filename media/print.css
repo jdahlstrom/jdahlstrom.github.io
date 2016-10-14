@@ -1,15 +1,14 @@
-h2, h3, div.col1, div.col2 { page-break-after: avoid; }
+#content { padding: 0; margin: 0; }
+
+#content #header div.col1 h1 { letter-spacing: 2px; }
+
+h2, h3, div.col1, div.col2 { page-break-after: never; }
 
 div.col1, div.col2 { margin-top: 6px; }
 
-#header div.col1 h1 { font-size: 14pt; margin: 0; padding: 0; }
-#header div.col2 h1 { font-size: 30pt; margin: 0; padding: 0; }
-
-div.col1 { width: 20%; }
-div.col2 { width: 78%; }
-
-div.col1 h3 { font-size: 12pt; color: #666; }
-div.col2 h3 { font-size: 11pt; margin-bottom: 4pt; }
+div.col1 { width: 25%; }
+div.col1 h3 { font-size: 20px; }
+div.col2 { width: 73%; }
 
 p { margin: 2px 0; }
 
