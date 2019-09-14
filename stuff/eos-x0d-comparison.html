@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2019 by anonymous (http://jsbin.com/lakatoguhi/8/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <style>
+      body {
+        background-color: F8F8F8;
+        font-family: Calibri, "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+        margin: 3em;
+        font-size: 10pt
+      }
+      p {
+        max-width: 50em;
+        margin-bottom: 0;
+      }
+      table { 
+        border-collapse: collapse;
+      }
+      tr th { 
+        color: #333;
+        padding: 18px 0 5px 0;
+        border-bottom: 1px solid #AAA; 
+        font-family: Cambria, Georgia, serif;
+        font-variant: small-caps;
+        text-transform: lowercase; 
+      }
+      tr td {
+        color: #111; 
+        white-space: nowrap; 
+        padding: 5px 0.6em; 
+        line-height: 1.1em;
+        
+        font-weight: 300;
+        border: 1px solid #CCC;
+        .background-color: #FCFCFC;
+      }
+      tr td:first-child {
+        font-weight: 500;
+      }
+      tr:nth-child(odd) td { 
+        background-color: #F2F2F2; 
+      }
+      tr td.b { 
+        background-color: #C8F8B8;
+      }
+      tr td.b2 {
+        background-color: #E0FFD0;
+      }
+      col.header { 
+        border-right: 1px solid #AAA;
+      }
+      tr td.note {
+        color: #666;
+        font-size: 80%;
+        background-color: transparent;
+        padding-left: 2em;
+        border: none;
+      }
+      td[colspan] { 
+        text-align: center;
+      }
+      
+      span.f {
+        font-family: Cambria, Georgia, serif;
+        font-style: italic;
+        font-weight: inherit;
+      }
+     
+    </style>
+  </head>
+  <body>
+    <p>
+    </p>
+    <div class="container">
+    <table>
+      <colgroup>
+        <col class="header">
+        <col class="c60d">
+        <col class="c70d">
+        <col class="c80d">
+        <col class="c7d2">
+        <col class="c90d">
+        <col class="notes">
+      </colgroup>
+      <thead>
+        <tr>
+          <th></th>
+          <th>60D</th>
+          <th>70D</th>
+          <th>80D</th>
+          <th>7D Mark II</th>
+          <th>90D</th>
+        </tr>
+      </thead>
+      <tbody style="overflow: auto;">
+        <tr>
+          <td>Processor</td>
+          <td>DIGIC 4</td>
+          <td>DIGIC 5+</td>          
+          <td>DIGIC 6</td>
+          <td class="b2">Dual DIGIC 6</td>
+          <td class="b">DIGIC 8</td>
+        </tr>
+        <tr>
+          <td>Sensor resolution</td>
+          <td>18 Mpix<br> 5184 × 3456</td>
+          <td class="">20.2 Mpix<br>5472 × 3648</td>
+          <td class="b2">24.2 Mpix<br>6000 × 4000</td>
+          <td class="">20.2 Mpix<br>5472 × 3648</td>
+          <td class="b">32.5 Mpix<br>6960 × 4640</td>
+          <td class="note">Effective megapixels</td>
+        </tr>
+        <tr>
+          <td>Viewfinder</td>
+          <td>96% coverage</td>
+          <td>Intelligent<br>98% coverage</td>
+          <td class="b2">Intelligent<br>100% coverage<br>0.95× magnification</td>
+          <td class="b">Intelligent<br>100% coverage<br>1.0× magnification</td>
+          <td class="b2">Intelligent<br>100% coverage<br>0.95× magnification</td>
+        </tr>       
+        <tr>
+          <td>Electronic level</td>
+          <td>Rear LCD, top LCD<br>Single-axis</td>
+          <td>Rear LCD, OVF<br>Single-axis</td>
+          <td>Rear LCD, OVF<br>Single-axis</td>
+          <td class="b">Rear LCD, OVF<br>Dual-axis</td>
+          <td>Rear LCD, OVF<br>Single-axis</td>
+        </tr>
+        <tr>
+          <td>Battery life</td>
+          <td class="b2">1100 shots, 320 in LV</td>
+          <td>920 shots, 210 in LV</td>
+          <td class="">960 shots, 300 in LV</td>
+          <td>670 shots, 250 in LV</td>
+          <td class="b">1300 shots, 450 in LV</td>
+          <td class="note">CIPA rating</td>
+        </tr>
+          <tr>
+          <!-------------------->
+          <th colspan=6>Build</th>
+          <!-------------------->
+        </tr>   
+        <tr>
+          <td>Body material</td>
+          <td>Polycarbonate resin
+          <td>Polycarbonate resin
+          <td>Polycarbonate resin
+          <td class="b">
+            Magnesium alloy 
+          <td class="b2">
+            Aluminum alloy and polycarbonate resin
+        </tr>
+        <tr>
+          <td>Weather sealing</td>
+          <td>Some</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td class="b">Extensive</td>
+          <td class="b2">Improved</td>
+          <td class="note">70D sealing said to be like 7D1's</td>
+        </tr>
+        <tr>
+          <td>Shutter rating</td>
+          <td colspan="3">100,000 actuations
+          <td class="b">200,000 actuations
+          <td class="b2">120,000 actuations
+        <tr>
+          <td>Dimensions</td>
+          <td>145 × 106 × 79 mm</td>
+          <td>139 × 104 × 79 mm</td>
+          <td>139 × 105 × 79 mm</td>
+          <td>149 × 112 × 78 mm</td>
+          <td>141 × 105 × 77 mm</td>
+          <td class="note">Rounded to nearest mm</td>
+        </tr>
+        <tr>
+          <td>Weight</td>
+          <td>755 g</td>
+          <td>755 g</td>
+          <td>730 g</td>
+          <td>920 g</td>
+          <td class="b">701 g
+          <td class="note">Including battery</td>
+        </tr>
+
+        <tr>
+          <!------------------------>
+          <th colspan=6>Exposure</th>
+          <!------------------------>
+        </tr>
+            
+        <tr>
+          <td>Maximum shutter speed
+          <td colspan=5><sup>1</sup>/<sub>8000</sub>
+        <tr>
+          <td>Metering sensor</td>
+          <td>63-zone iFCL</td>
+          <td>63-zone iFCL</td>
+          <td>63-zone 7560-pixel RGB+IR</td>
+          <td class="b2">252-zone 150,000-pixel RGB+IR</td>
+          <td class="b">216-zone 220,000-pixel RGB+IR
+        </tr>
+        <!--tr>
+          <td>Metering modes
+            <td-->
+        <tr>
+          <td>AE/WB bracketing</td>
+          <td>3 exposures up to ±3 EV</td>
+          <td class="b" colspan=4>2, 3, 5 or 7 exp. up to 3 EV steps</td>
+          <td class="note">2, 5, and 7 via C.Fn I-5</td>
+        </tr>
+        <tr>
+          <td>AWB white priority
+          <td>No</td>
+          <td>No</td>
+          <td class="b">Yes</td>
+          <td>No</td>
+          <td class="b">Yes
+        </tr>
+        <tr>
+          <td>ISO speed</td>
+          <td>Auto, 100–6400, H: 12800</td>
+          <td>Auto, 100–12800, H: 25600</td>
+          <td>Auto, 100–16000, H: 25600</td>
+          <td class="b2">Auto, 100–16000, H1: 25600, H2: 51200</td>
+          <td class="b">Auto, 100–25600, H: 51200</td>
+        </tr>
+        <tr>
+          <td>Auto ISO exposure comp.</td>
+          <td colspan="2">No</td>
+          <td colspan="3" class="b">Yes</td>
+        </tr>
+        <tr>
+          <td>Auto ISO min. shutter speed</td>
+          <td>No</td>
+          <td class="b2">Yes, manual</td>
+          <td class="b" colspan="3">Yes, auto ±2 EV or manual</td>
+        </tr>
+        <tr>
+          <td>Custom auto ISO range</td>
+          <td>Max</td>
+          <td class="b" colspan="4">Min, max</td>
+        </tr>
+        <tr>
+          <td>Custom manual ISO range</td>
+          <td>No</td>
+          <td class="b" colspan="4">Min, max</td>
+        </tr>
+        
+        <tr>
+          <td>Flicker reduction</td>
+          <td colspan="2">No</td>
+          <td class="b" colspan="3">Yes</td>
+        </tr>
+        <tr>
+          <td>Scene modes</td>
+          <td>5</td>
+          <td>7</td>
+          <td>10</td>
+          <td>None</td>
+          <td>12
+        </tr>    
+            
+        <tr>
+          <!--------------------->
+          <th colspan=6>Drive</th>
+          <!--------------------->
+        </tr>
+
+        <tr>
+          <td>Continuous shooting</td>
+          <td>Hi: 5.3 FPS<br>Lo: 3 FPS</td>
+          <td colspan="2">Hi: 7 FPS<br>Lo: 3 FPS</td>
+          <td class="b" colspan="2">Hi: 10 FPS<br>Lo: 3 FPS</td>
+        </tr>
+        <tr>
+          <td>Custom low and high FPS
+          <td>No<td>No<td>No<td class="b">Yes<td>No
+        </tr>
+        <tr>
+          <td>OVF silent shooting</td>
+          <td>No</td>
+          <td class="b2">Yes, one shot or 3 FPS</td>
+          <td class="b2">Yes, one shot or 3 FPS</td>
+          <td class="b">Yes, one shot or 4 FPS</td>
+          <td class="b2">Yes, one shot or 3 FPS</td>
+        </tr>
+        <tr>
+          <td>Maximum burst</td>
+          <td>16 RAW, 58 JPEG</td>
+          <td>16 RAW, 65 JPEG</td>
+          <td>25 RAW, 110 JPEG</td>
+          <td class="b">31 RAW, 1090 JPEG</td>
+          <td class="b2">26 RAW, 40 C-RAW, 57 JPEG
+        </tr>
+        <tr>
+          <td>Interval timer</td>
+          <td colspan="2">No</td>
+          <td class="b" colspan="3">
+            Yes, 1–99 shots or until stopped<br>
+            Interval from 00:00:01 to 99:59:59
+        </tr>
+        <tr>
+          <td>Bulb timer</td>
+          <td colspan="2">No</td>
+          <td class="b" colspan="3">Yes, from 00:00:01 to 99:59:59</td>
+        </tr>    
+        <tr>
+          <td>Focus bracketing
+          <td colspan="4">No
+          <td class="b">Yes
+        </tr>
+            
+        <tr>
+          <!------------------------->
+          <th colspan=6>Autofocus</td>
+          <!------------------------->
+        </tr>
+            
+        <tr>
+          <td>AF sensor</td>
+          <td>9 points</td>
+          <td>19 points</td>
+          <td class="b2">45 points</td>
+          <td class="b">65 points</td>
+          <td class="b2">45 points
+          <td class="note">
+            All cross-type<br>
+            Center hi-precision dual cross up to 𝑓/2.8
+          </td>
+        </tr>
+        <tr>
+          <td>AF at 𝑓/8</td>
+          <td>No</td>
+          <td>No</td>
+          <td class="b">
+            Yes, center point with all lenses<br>
+            27 points with 100–400 L II + Extender 1.4× III<br>
+            and 200–400 L + Extender 2× III<br>
+          </td>
+          <td class="b2">
+            Yes, center point with all lenses<br>
+            AF point expansion possible
+          </td>
+          <td class="b">Same as 80D
+        <tr>
+          <td>Sensitivity</td>
+          <td colspan="2">-0.5–18 EV</td>
+          <td class="b" colspan="3">
+            -0.5–18 EV<br>
+            Center point to -3 EV at 𝑓/2.8,
+            -1 at 𝑓/5.6
+          </td>
+          
+        </tr>
+        <tr>
+          <td>Point selection</td>
+          <td>
+            One-point<br>
+            All points
+          </td>
+          <td>
+            One-point<br>
+            Zone (five zones)<br>
+            All points
+          </td>
+          <td>
+            One-point<br>
+            Zone (nine 3×3 zones)<br>
+            Large zone (three zones)<br>
+            All points
+          </td>
+          <td class="b">
+            Spot<br>
+            One-point<br>
+            Point expansion (4 or 8 points)<br>
+            Zone (nine 3×3 zones)<br>
+            Large zone (three zones)<br>
+            All points
+          </td>
+          <td class="b2">
+            Spot<br>
+            One-point<br>
+            Zone (nine 3×3 zones)<br>
+            Large zone (three zones)<br>
+            All points
+          </td>
+            
+        </tr>
+        <tr>
+          <td>Metering sensor assist</td>
+          <td>No</td>
+          <td>No</td>
+          <td>Color tracking</td>
+          <td class="b2">iTR</td>
+          <td class="b">
+            iTR, optional face priority
+          </td>
+          <td class="note">
+            iTR: Intelligent Tracking and Recognition
+          </td>
+        </tr>
+        <tr>
+          <td>AF cases</td>
+          <td>No</td>
+          <td>No</td>
+          <td>No</td>
+          <td class="b">6, with 3 parameters</td>
+          <td>No
+        </tr>
+        <tr>
+          <td>AF microadjustment</td>
+          <td>No</td>
+          <td class="b" colspan="4">Yes</td>
+        </tr>
+
+        <tr>
+          <!------------------------>
+          <th colspan=6>Image processing</th>
+          <!------------------------>
+        </tr>
+            
+        <tr>
+          <td>Picture styles</td>
+          <td>7</td>
+          <td>7</td>
+          <td class="b">8</td>
+          <td>7</td>
+          <td class="b">8
+          <td class="note">Fine Detail added in 80D</td>
+        </tr>
+        <tr>
+          <td>Lens correction</td>
+          <td>Vignetting</td>
+          <td>Vignetting, CA</td>
+          <td class="b2">Vignetting, distortion, CA</td>
+          <td class="b2">Vignetting, distortion, CA</td>
+          <td class="b">
+            Vignetting, distortion, diffraction, CA<br>
+            Digital Lens Optimizer
+          </td>
+        </tr>
+        <tr>
+          <td>Multiple exposure</td>
+          <td>No</td>
+          <td colspan="2" class="b2">Yes, 2–9 exposures<br>Additive, average</td>
+          <td class="b2">Yes, 2–9 exposures<br>Additive, average</td>
+          <td class="b">
+            Yes, 2–9 exposures<br>
+            Additive, average, bright, dark<br>
+            Control or cont. shooting priority
+          </td>
+          <td class="b2">Same as 70D and 80D</td>
+        </tr>
+        <tr>
+          <td>HDR shooting</td>
+          <td>No</td>
+          <td class="b" colspan="4">Yes, 3 exp. up to ±3 EV</td>
+        </tr>
+        <tr>
+          <td>Multi-shot noise reduction</td>
+          <td>No</td>
+          <td class="b">Yes</td>
+          <td class="b">Yes</td>
+          <td>No</td>
+          <td class="b">Yes
+          <td class="note">4 frames stacked</td>
+        </tr>    
+        <tr>
+          <td>RAW formats
+          <td colspan=4>CR2: RAW, M-RAW, S-RAW
+          <td class="b">CR3: RAW, C-RAW
+        <tr>
+          <td>In-camera RAW processing
+          <td colspan="4">Yes
+          <td class="b">Yes<br>batch processing possible
+        <tr>
+          <td>Creative filters</td>
+          <td>No</td>
+          <td>No</td>
+          <td class="b">Yes, 10 filters</td>
+          <td>No</td>
+          <td class="b">Yes
+        </tr>
+            
+        <tr>
+          <!-------------------->
+          <th colspan=6>LCD monitor</th>
+          <!-------------------->
+        </tr>
+        
+        <tr>
+          <td>Touch screen</td>
+          <td>No</td>
+          <td class="b">Yes, multitouch</td>
+          <td class="b">Yes, multitouch</td>
+          <td>No</td>
+          <td class="b">Yes, multitouch</td>
+        </tr>
+        <tr>
+          <td>Resolution
+          <td colspan=5>1040K dots
+        <tr>
+          <td>Vari-Angle swivel</td>
+          <td class="b">Yes</td>
+          <td class="b">Yes</td>
+          <td class="b">Yes</td>
+          <td>No</td>
+          <td class="b">Yes
+        </tr>
+        <tr>
+          <td>Coating</td>
+          <td>ClearView</td>
+          <td class="b" colspan="4">ClearView II</td>
+          <td class="note">II has smudge resistance, no air gap</td>
+        </tr>
+        <tr>
+          <td>Auto brightness</td>
+          <td>No</td>
+          <td>No</td>
+          <td>No</td>
+          <td class="b">Yes</td>
+          <td>No
+        </tr>
+            
+            
+        <tr>          
+          <!--------------------->
+          <th colspan=6>Live View</th>
+          <!--------------------->
+        </tr>
+            
+        <tr>
+          <td>AF in Live View</td>
+          <td>Contrast detect</td>
+          <td class="">Dual Pixel<br>80% coverage</td>
+          <td class="b2">
+            Dual Pixel<br>
+            80% coverage<br>
+            All EF/EF-S lenses supported
+          </td>
+          <td class="">Same as the 70D</td>
+          <td class="b">
+            Dual Pixel<br>
+            88% horizontal, 100% vertical coverage
+          </td>
+        </tr>
+        <tr>
+          <td>AF operation</td>
+          <td>One shot</td>
+          <td class="b2">One shot<br>Continuous focus</td>
+          <td class="b">One shot<br>Servo AF</td>
+          <td class="b2">One shot<br>Continuous focus</td>
+          <td class="b">One shot<br>Servo AF<br>Continuous focus</td>
+        </tr>
+        <tr>
+          <td>AF methods</td>
+          <td>
+            Quick AF (flip mirror)<br>
+            Live AF<br>
+            Face detect Live AF
+          </td>
+          <td class="">
+            Quick AF (flip mirror)<br>
+            Face detect + tracking<br>
+            Single zone (31 points, 9 zones)<br>
+            Multi-zone (31 points, 9 zones)
+          </td>
+          <td class="b2">
+            Face detect + tracking<br>
+            Single zone (35 points, 9 zones)<br>
+            Multi-zone (35 points, 9 zones)
+          </td>
+          <td class="">Same as the 70D</td>
+          <td class="b">
+            Eye detect<br>
+            Face detect + tracking<br>
+            Spot<br>
+            Single point<br>
+            Zone
+          </td>
+        </tr>
+        <tr>
+          <td>Electronic shutter
+          <td colspan="4">First curtain
+          <td class="b">
+            First curtain<br>
+            Fully electronic<br>
+            Max shutter speed with e-shutter <sup>1</sup>/<sub>16000</sub>
+        <tr>
+          <td>Continuous shooting
+          <td>
+          <td>
+          <td class="b2">
+            Hi: 4.5 fps (shutter priority)<br>
+            Lo: 3 fps (focus priority)
+          <td>
+          <td class="b">
+            11 fps (One-shot AF)<br>
+            7 fps (Servo AF)
+        </tr>   
+        <tr>
+          <td>Metering modes</td>
+          <td>Evaluative</td>
+          <td class="b">
+            Evaluative (315-zone)<br>
+            Partial (10.3%)<br>
+            Spot (2.6%)<br>
+            Center-weighted avg
+          </td>
+          <td class="b">
+            Evaluative (315-zone)<br>
+            Partial (6.1%)<br>
+            Spot (2.6%)<br>
+            Center-weighted avg
+          </td>
+          <td class="b">
+            Same as the 70D
+          </td>
+          <td class="b">
+            Evaluative (384-zone)<br>
+            Partial<br>
+            Spot<br>
+            Center-weighted avg<br>
+        </tr>
+        <tr>
+          <td>Metering range</td>
+          <td colspan=4>
+          <td class="b">–5–20 EV at 𝑓/1.2
+        <tr>
+          <td>Touch AF</td>
+          <td>N/A</td>
+          <td class="b">Yes</td>
+          <td class="b">Yes</td>
+          <td>N/A</td>
+          <td class="b">Yes</td>
+        </tr>
+        <tr>
+          <td>Touch shutter</td>
+          <td>N/A</td>
+          <td class="b">Yes</td>
+          <td class="b">Yes</td>
+          <td>N/A</td>
+          <td class="b">Yes</td>
+        </tr>
+        <tr>
+          <!------------------------------>
+          <th colspan=6>Movie shooting</th>
+          <!------------------------------>
+        </tr>
+        <tr>
+          <td>Recording quality</td>
+          <td>
+            1080p at 30 fps<br>
+            720p at 60 fps<br>
+            640x480 VGA at 30 fps
+          </td>
+          <td>
+            1080p at 30 fps ALL-I/IPB<br>
+            720p at 60 fps ALL-I/IPB
+          </td>
+          <td>
+            1080p at 60 fps IPB<br>
+            1080p at 30/24 fps ALL-I<br>
+            720p at 60/30/24 fps IPB
+          </td>
+          <td class="b2">
+            1080p at 60/30/24 fps ALL-I/IPB<br>
+            720p at 60/30/24 fps ALL-I/IPB
+          </td>
+          <td class="b">
+            UHD 4K at 30 fps IPB<br>
+            1080p at 120/60/30 fps IPB<br>
+            720p at 60/30 fps IPB
+          </td>
+          <td class="note">100/50/25 fps in PAL mode
+        </tr>
+        <tr>
+          <td>Formats</td>
+          <td>MOV</td>
+          <td>MOV</td>
+          <td>MOV, MP4</td>
+          <td>MOV, MP4</td>
+          <td>MP4
+        </tr>
+        <tr>
+          <td>Exposure modes</td>
+          <td>Auto, P, M</td>
+          <td>Auto, P, M</td>
+          <td>Auto, P, M</td>
+          <td class="b">Auto, P, Tv, Av, M</td>
+          <td>Auto, P, M
+        </tr>
+        <tr>
+          <td>Digital zoom</td>
+          <td class="b2">VGA crop mode</td>
+          <td colspan="2" class="b">3–10x</td>
+          <td colspan="2">No</td>
+        </tr>
+        <tr>
+          <td>Still shooting while rec.</td>
+          <td colspan="2" class="b">Yes</td>
+          <td colspan="3">No</td>
+          <td class="note">Causes a ~1 sec pause in movie</td>
+        </tr>
+        <tr>
+          <td>Silent control</td>
+          <td>No</td>
+          <td class="b">Yes, touchscreen</td>
+          <td class="b">Yes, touchscreen</td>
+          <td class="b2">Yes, touchpad</td>
+          <td>???
+        </tr>
+        <tr>
+          <td>Recording past 4 GB</td>
+          <td>No</td>
+          <td class="b" colspan="4">Yes</td>
+          <td class="note">Seamlessly start a new file at 4 GB
+        </tr>
+        <tr>
+          <td>Movie Servo AF</td>
+          <td>No</td>
+          <td class="b" colspan="4">Yes</td>
+        </tr>
+        <tr>
+          <td>HDR Movie</td>
+          <td>No</td>
+          <td>No</td>
+          <td class="b">Yes</td>
+          <td>No</td>
+          <td class="b">Yes</td>
+        </tr>
+        <tr>
+          <td>Movie Creative Filters</td>
+          <td>No</td>
+          <td>No</td>
+          <td class="b">Yes</td>
+          <td>No</td>
+          <td>???
+        </tr>
+        <tr>
+          <td>Timelapse video</td>
+          <td>No</td>
+          <td>No</td>
+          <td class="b2">Yes, 1080p ALL-I</td>
+          <td>No</td>
+          <td class="b">Yes, UHD 4K or 1080p ALL-I
+        </tr>
+        <tr>
+          <td>Video snapshots</td>
+          <td>No</td>
+          <td class="b">Yes</td>
+          <td class="b">Yes</td>
+          <td>No</td>
+          <td class="b">Yes
+        </tr>
+        <tr>
+          <td>Internal microphone</td>
+          <td>Mono</td>
+          <td class="b">Stereo</td>
+          <td class="b">Stereo</td>
+          <td>Mono</td>
+          <td class="b">Stereo
+        </tr>
+            
+            
+        <tr>
+          <!----------------------------->
+          <th colspan=6>Interface</th>
+          <!----------------------------->
+        </tr>
+        
+        <tr>
+          <td>Multi-controller
+          <td colspan="3">Directional pad
+          <td>Joystick
+          <td>Joystick<br>D-pad
+        </tr>
+        <tr>
+          <td>My Menu</td>
+          <td colspan="2">1 tab, 6 items</td>
+          <td class="b" colspan="3">5 tabs, 6 items per tab</td>
+        </tr>
+        <tr>
+          <td>Languages
+          <td>
+          <td>
+          <td>27
+          <td>
+          <td>29
+        </tr>
+        <tr>
+          <td>Custom shooting modes</td>
+          <td>C</td>
+          <td>C</td>
+          <td class="b2">C1, C2</td>
+          <td class="b">C1, C2, C3</td>
+          <td class="b2">C1, C2</td>
+        </tr>
+        <tr>
+          <td>Custom controls</td>
+          <td>4</td>
+          <td class="b2">9</td>
+          <td class="b2">9</td>
+          <td class="b">11</td>
+          <td>???
+        </tr>
+        <tr>
+          <td>AF functions</td>
+          <td>4</td>
+          <td class="b2">13</td>          
+          <td class="b">16</td>
+          <td class="b">17</td>
+          <td>???
+        </tr>
+        <tr>
+          <td>Focusing screen</td>
+          <td class="b">Interchangeable</td>
+          <td>Fixed</td>
+          <td>Fixed</td>
+          <td class="b">Interchangeable</td>
+          <td>Fixed
+        </tr>
+            
+        <tr>
+          <!---------------------------->
+          <th colspan=6>Connectivity</th>
+          <!---------------------------->
+        </tr>
+        
+        <tr>
+          <td>GPS</td>
+          <td>No</td>
+          <td>GP-E2 compatible</td>
+          <td>GP-E2 compatible</td>
+          <td class="b">Yes</td>
+          <td class="b2">
+            GP-E2 compatible<br>
+            Smartphone via BLE</td>
+        </tr>
+        <tr>
+          <td>Wi-Fi</td>
+          <td>No</td>
+          <td class="b">Yes</td>
+          <td class="b">Yes</td>
+          <td>No</td>
+          <td class="b">Yes</td>
+        </tr>
+        <tr>
+          <td>NFC</td>
+          <td>No</td>
+          <td>No</td>
+          <td class="b">Yes</td>
+          <td>No</td>
+          <td>No
+        </tr>
+        <tr>
+          <td>Bluetooth
+          <td colspan=4>No
+          <td class="b">Yes, BLE
+        <tr>
+          <td>Memory card</td>
+          <td>SD</td>
+          <td>SD</td>
+          <td>SD</td>
+          <td class="b">CF and SD</td>
+          <td class="b2">SD (UHS-II)
+          <td class="note">SDHC/SDXC supported</td>
+        </tr>
+        <tr>
+          <td>USB terminal</td>
+          <td colspan="3">Hi-Speed</td>
+          <td class="b">Super-Speed</td>
+          <td>Hi-Speed
+        </tr>
+        <tr>
+          <td>A/V output</td>
+          <td>HDMI, RCA</td>
+          <td>HDMI, RCA</td>
+          <td>HDMI</td>
+          <td>HDMI</td>
+          <td>HDMI
+        </tr>
+        <tr>
+          <td>Clean HDMI output
+          <td colspan="4">No
+          <td class="b">Yes, 8-bit or 10-bit 4:2:2
+        <tr>
+          <td>Headphone jack</td>
+          <td colspan="2">No</td>
+          <td colspan="3" class="b">Yes</td>
+        </tr>    
+            
+      </tbody>
+    </table>
+  </body>
+</html>
